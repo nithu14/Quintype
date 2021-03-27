@@ -1,39 +1,52 @@
 package PetStore;
 
 import static io.restassured.RestAssured.given;
-
-import org.apache.commons.lang3.time.StopWatch;
-
-import io.restassured.RestAssured;
+import java.io.IOException;
+import org.testng.annotations.Test;
 import io.restassured.path.json.JsonPath;
 import utility.Base;
 
 public class getPetStatus extends Base{
 
-	public static void main(String[] args) {
+	public getPetStatus() throws IOException {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	@Test
+	public static void getStatus() throws IOException {
 		// TODO Auto-generated method stub
-		StopWatch stopWatch = new StopWatch();
-		stopWatch.start();
-		RestAssured.baseURI = Baseurl;
-		String response = given().queryParam("status", "sold").log().all()
-		  .header("accept", "application/json")
+		 getPetStatus gp = new getPetStatus();
+		
+		String response = given().spec(gp.requestsepc("getstatus")).queryParam("status", getstaus())
+				.header("Content-Type","application/json")
 		  .when().get("/pet/findByStatus")
-		  .then().log().all().assertThat().statusCode(200).extract().response().asString();
-		stopWatch.stop();
-		long time = stopWatch.getTime();
-		System.out.println("Time is "+time);
+		  .then().spec(gp.responsespec()).extract().response().asString();
 		
+		gp.getpetstatus(response);
 		
+		}
+	
+	//verify response contains our pet
+	public void getpetstatus(String response) throws IOException {
+		//check for particular pet we need
 		  JsonPath jp = new JsonPath(response); 
 		  int count=jp.getInt("id.size()");
+		  boolean flag=false;
 		  System.out.println("************************************************");
-		  System.out.println(count);
 		  for(int i=0;i<count;i++) {
-		   System.out.println(jp.getString("id["+i+"]"));
+			  String petname = jp.getString("category["+i+"].name");
+			  if(petname.equalsIgnoreCase(getname())) {
+				  
+				  flag=true;
+				  break;
+			  }   
 		  }
-		 
-		 
-
+		  if(flag) {
+			  System.out.println("Oops...! Looks like Pet ur searching for is sold");
+		  }else
+			  System.out.println("Pet is not yet sold, may be available or pending verification");
+		
 	}
 
 }

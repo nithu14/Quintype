@@ -45,31 +45,7 @@
     <groupId>org.apache.httpcomponents</groupId>
     <artifactId>httpclient</artifactId>
     <version>4.5.13</version>
-</dependency>
-    <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpmime -->
-<dependency>
-    <groupId>org.apache.httpcomponents</groupId>
-    <artifactId>httpmime</artifactId>
-    <version>4.5.13</version>
-</dependency>
-    <!-- https://mvnrepository.com/artifact/org.ccil.cowan.tagsoup/tagsoup -->
-<dependency>
-    <groupId>org.ccil.cowan.tagsoup</groupId>
-    <artifactId>tagsoup</artifactId>
-    <version>1.2.1</version>
-</dependency>
-    <!-- https://mvnrepository.com/artifact/org.codehaus.groovy/groovy -->
-<dependency>
-    <groupId>org.codehaus.groovy</groupId>
-    <artifactId>groovy</artifactId>
-    <version>3.0.7</version>
-</dependency>
-    <!-- https://mvnrepository.com/artifact/org.codehaus.groovy/groovy-xml -->
-<dependency>
-    <groupId>org.codehaus.groovy</groupId>
-    <artifactId>groovy-xml</artifactId>
-    <version>3.0.7</version>
-</dependency>
+</dependency> 
 <!-- https://mvnrepository.com/artifact/org.hamcrest/hamcrest -->
 <dependency>
     <groupId>org.hamcrest</groupId>
@@ -90,12 +66,25 @@
     <artifactId>poi</artifactId>
     <version>5.0.0</version>
 </dependency>
-<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml-schemas -->
+<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
 <dependency>
     <groupId>org.apache.poi</groupId>
-    <artifactId>poi-ooxml-schemas</artifactId>
-    <version>4.1.2</version>
+    <artifactId>poi-ooxml</artifactId>
+    <version>5.0.0</version>
 </dependency>
+<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
+<dependency>
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j-core</artifactId>
+    <version>2.14.1</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/com.relevantcodes/extentreports -->
+<dependency>
+    <groupId>com.relevantcodes</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>2.41.2</version>
+</dependency>
+
 
   </dependencies>
 </project>

@@ -2,7 +2,7 @@ package userData;
 
 public class UserLogin {
 
-	public static void main(String[] args) {
+	public static void userLogin() {
 		// TODO Auto-generated method stub
 
 	}

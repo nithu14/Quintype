@@ -1,5 +1,6 @@
 package userData;
 
+import java.io.IOException;
 import java.util.ArrayList;
 
 import static io.restassured.RestAssured.*;
@@ -8,7 +9,12 @@ import utility.Base;
 
 public class AddUser extends Base {
 
-	public static void main(String[] args) {
+	public AddUser() throws IOException {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void addUser() {
 		// TODO Auto-generated method stub
 		ArrayList<Integer> id = new ArrayList<Integer>();
 		ArrayList<String> name = new ArrayList<String>();

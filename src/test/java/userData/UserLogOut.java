@@ -2,7 +2,7 @@ package userData;
 
 public class UserLogOut {
 
-	public static void main(String[] args) {
+	public static void userLogout() {
 		// TODO Auto-generated method stub
 
 	}
