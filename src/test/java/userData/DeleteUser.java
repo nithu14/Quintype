@@ -1,13 +1,27 @@
 package userData;
 
-import io.restassured.RestAssured;
+import utility.Base;
 
-public class DeleteUser {
+import static io.restassured.RestAssured.*;
 
-	public static void deleteUser() {
+import java.io.IOException;
+
+import org.testng.annotations.Test;
+
+public class DeleteUser extends Base{
+
+	public DeleteUser() throws IOException {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+@Test
+	public static void deleteUser() throws IOException {
 		// TODO Auto-generated method stub
-		RestAssured.baseURI = "https://petstore.swagger.io/v2";
-		
+		DeleteUser du = new DeleteUser();
+		given().spec(du.requestsepc("GetUser"))
+		.pathParam("username",username())
+		.when().get("/user/{username}")
+		.then().spec(du.responsespec());
 	}
 
 }

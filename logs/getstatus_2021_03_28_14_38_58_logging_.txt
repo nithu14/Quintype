@@ -1,0 +1,96 @@
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/pet/findByStatus?status=sold
+Proxy:			<none>
+Request params:	<none>
+Query params:	status=sold
+Form params:	<none>
+Path params:	<none>
+Headers:		accept=application/json
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Sun, 28 Mar 2021 09:09:00 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+[
+    {
+        "id": 13169042,
+        "category": {
+            "id": 65970529,
+            "name": "Claude"
+        },
+        "name": "Helen Back",
+        "photoUrls": [
+            "www.beattycummerataandhirthe.name"
+        ],
+        "tags": [
+            {
+                "id": 45041883,
+                "name": "Flatley"
+            }
+        ],
+        "status": "sold"
+    },
+    {
+        "id": 78320670,
+        "category": {
+            "id": 58527045,
+            "name": "Roberto"
+        },
+        "name": "Ginger Rayl",
+        "photoUrls": [
+            "www.schadenoharaandlabadie.org"
+        ],
+        "tags": [
+            {
+                "id": 67041798,
+                "name": "Nikolaus"
+            }
+        ],
+        "status": "sold"
+    },
+    {
+        "id": 39580240,
+        "category": {
+            "id": 69590124,
+            "name": "Jean"
+        },
+        "name": "Anita Knapp",
+        "photoUrls": [
+            "www.handcronaandboyer.org"
+        ],
+        "tags": [
+            {
+                "id": 3493931,
+                "name": "Pagac"
+            }
+        ],
+        "status": "sold"
+    },
+    {
+        "id": 41,
+        "category": {
+            "id": 0,
+            "name": "Tom"
+        },
+        "name": "Tom",
+        "photoUrls": [
+            "string"
+        ],
+        "tags": [
+            {
+                "id": 0,
+                "name": "string"
+            }
+        ],
+        "status": "sold"
+    }
+]

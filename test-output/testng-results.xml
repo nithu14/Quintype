@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-03-27T13:40:37 IST" name="Default suite" finished-at="2021-03-27T13:40:44 IST" duration-ms="6776">
+  <suite started-at="2021-03-28T16:55:29 IST" name="Default suite" finished-at="2021-03-28T16:55:36 IST" duration-ms="7065">
     <groups>
     </groups>
-    <test started-at="2021-03-27T13:40:37 IST" name="Default test" finished-at="2021-03-27T13:40:44 IST" duration-ms="6776">
-      <class name="PetStore.UpdatePhoto">
-        <test-method signature="uploadPhoto()[pri:0, instance:PetStore.UpdatePhoto@c33b74f]" started-at="2021-03-27T13:40:37 IST" name="uploadPhoto" finished-at="2021-03-27T13:40:44 IST" duration-ms="6629" status="PASS">
+    <test started-at="2021-03-28T16:55:29 IST" name="Default test" finished-at="2021-03-28T16:55:36 IST" duration-ms="7065">
+      <class name="userData.UserLogOut">
+        <test-method signature="userLogout()[pri:0, instance:userData.UserLogOut@1dde4cb2]" started-at="2021-03-28T16:55:29 IST" name="userLogout" finished-at="2021-03-28T16:55:36 IST" duration-ms="6977" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- uploadPhoto -->
-      </class> <!-- PetStore.UpdatePhoto -->
+        </test-method> <!-- userLogout -->
+      </class> <!-- userData.UserLogOut -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

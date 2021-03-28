@@ -1,0 +1,41 @@
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/pet/findByStatus?status=pending
+Proxy:			<none>
+Request params:	<none>
+Query params:	status=pending
+Form params:	<none>
+Path params:	<none>
+Headers:		accept=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Sun, 28 Mar 2021 09:00:41 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+[
+    {
+        "id": 24197283,
+        "category": {
+            "id": 47257273,
+            "name": "Julee"
+        },
+        "name": "Eve O'Lution",
+        "photoUrls": [
+            "www.ritchie-bode.io"
+        ],
+        "tags": [
+            {
+                "id": 26479188,
+                "name": "Streich"
+            }
+        ],
+        "status": "pending"
+    }
+]

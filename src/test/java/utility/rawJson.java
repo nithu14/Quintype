@@ -27,4 +27,21 @@ public class rawJson {
 				"}";
 	}
 	
+	public static String adduser(String id,String name,String Fname,String Lname,String email,String pwd,String phone) {
+		
+		return "[\r\n"
+				+ "  {\r\n"
+				+ "    \"id\": "+id+",\r\n"
+				+ "    \"username\": \""+name+"\",\r\n"
+				+ "    \"firstName\": \""+Fname+"\",\r\n"
+				+ "    \"lastName\": \""+Lname+"\",\r\n"
+				+ "    \"email\": \""+email+"\",\r\n"
+				+ "    \"password\": \""+pwd+"\",\r\n"
+				+ "    \"phone\": \""+phone+"\",\r\n"
+				+ "    \"userStatus\": 0\r\n"
+				+ "  }\r\n"
+				+ "]";
+		
+	}
+	
 }

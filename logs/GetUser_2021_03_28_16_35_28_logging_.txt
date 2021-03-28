@@ -1,0 +1,31 @@
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/user/ABC125
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	username=ABC125
+Headers:		accept=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Sun, 28 Mar 2021 11:05:43 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 102,
+    "username": "ABC125",
+    "firstName": "Kim",
+    "lastName": "Kim",
+    "email": "abc@abc.com",
+    "password": "ABC125",
+    "phone": "1.23456791E8",
+    "userStatus": 0
+}

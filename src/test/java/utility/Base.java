@@ -1,5 +1,9 @@
 package utility;
 
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.HTMLReporter;
+
 import java.time.format.DateTimeFormatter;  
 import java.time.LocalDateTime; 
 import java.io.FileInputStream;
@@ -7,12 +11,8 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.PrintStream;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.Properties;
-
 import com.sun.org.apache.bcel.internal.classfile.Method;
-
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.filter.log.RequestLoggingFilter;
@@ -25,6 +25,7 @@ public class Base {
 //	public static String Baseurl;
 	public static Properties pro;
 	public static FileInputStream fis;
+	public static ExtentReports report;
 	
 	public Base() throws IOException {
 		pro = new Properties();
@@ -58,6 +59,10 @@ public class Base {
 		// TODO Auto-generated method stub
 	return pro.getProperty("PetID_photoUpload");
 	}
+	public static String username() throws IOException {
+		// TODO Auto-generated method stub
+	return pro.getProperty("username");
+	}
 	public static String photoURL() throws IOException {
 		// TODO Auto-generated method stub
 	return System.getProperty("user.dir")+pro.getProperty("Photo_URL");
@@ -88,6 +93,15 @@ public class Base {
 				.expectStatusCode(200)
 				.build();
 	return res;
+	}
+	
+	public static ExtentReports Extendreport() {
+		report=new ExtentReports(System.getProperty("user.dir") +"/report/testReport.html");
+		report
+        .addSystemInfo("Host Name", "Interviewcode")
+        .addSystemInfo("User Name", "Nithanth");
+		
+		return report;
 	}
 
 }
