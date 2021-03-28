@@ -11,10 +11,6 @@
       <class name="PetStore.updatePet"/>
       <class name="PetStore.UpdatePhoto"/>
    
-    </classes>
-    </test>
-    <test thread-count="5" name="Test">
-     <classes>
     <class name="PetStore.AddUser"/>
       <class name="PetStore.GetUser"/>
       <class name="PetStore.UserLogin"/>
